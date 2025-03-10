@@ -1,0 +1,15 @@
+<nav class="bg-dark m-0">
+   <header class="d-flex justify-content-center py-3">
+      <ul ngbNav #nav="ngbNav" class="nav nav-pills" [(activeId)]="active">
+         <li class="nav-item" [ngbNavItem]="1">
+            <a routerLink="/home" class="nav-link" ngbNavLink>Home</a>
+         </li>
+         <li class="nav-item" [ngbNavItem]="2">
+            <a routerLink="/posts" class="nav-link" ngbNavLink>Posts</a>
+         </li>
+         <li class="nav-item" [ngbNavItem]="3">
+            <a routerLink="/about" class="nav-link" ngbNavLink>About</a>
+         </li>
+      </ul>
+   </header>
+</nav>

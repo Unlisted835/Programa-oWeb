@@ -1,0 +1,16 @@
+<section class="p-4">
+   <div class="list-group w-100 d-flex justify-content-center">
+      <a *ngFor="let post of posts" [routerLink]="['/posts', post.id]"
+         class="list-group-item list-group-item-action gap-3 py-3 d-flex align-items-center">
+         <img [src]="post.imgRef" width="50" height="50" class="rounded-circle">
+         <div class="d-flex gap-2 justify-content-between w-100">
+            <div>
+               <h6 class="mb-0">{{ post.title }}</h6>
+               <p class="mb-0 opacity-75">{{ post.shortDescription }}</p>
+            </div>
+            <small class="opacity-50 text-nowrap">{{ post.time }}</small>
+         </div>
+      </a>
+   </div>
+   <router-outlet></router-outlet>
+</section>
